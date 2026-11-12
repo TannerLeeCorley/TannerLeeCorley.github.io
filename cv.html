@@ -24,7 +24,9 @@ a{color:black;text-decoration:none}}
 <body><header class="site-header"><div class="container header-inner"><a class="identity" href="index.html"><strong>Tanner Lee Corley</strong><small>Historian · University of Alabama</small></a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="research.html">Research</a><a href="teaching.html">Teaching</a><a href="cv.html" aria-current="page">CV</a><a href="about.html">About Me</a></nav></div></header>
 <main><div class="container page">
 <div class="page-title"><p class="eyebrow">Academic record</p><h1>Curriculum Vitae</h1><p>Education, publications, teaching, awards, conference presentations, and service.</p></div>
-<div class="cv-actions"><button type="button" onclick="window.print()">Print or save CV as PDF</button><span class="small">This online CV can be printed or saved as a PDF from your browser.</span></div>
+<div class="cv-actions"><a id="official-cv-download" href="Tanner_Corley_CV.pdf" download hidden>Download original CV (PDF)</a><script>
+(async()=>{try{const response=await fetch("Tanner_Corley_CV.pdf",{method:"HEAD",cache:"no-store"});if(response.ok&&response.headers.get("content-type")?.toLowerCase().includes("pdf")){document.getElementById("official-cv-download").hidden=false;}}catch{}})();
+</script><button type="button" onclick="window.print()">Print or save CV as PDF</button><span class="small">This online CV can be printed or saved as a PDF from your browser.</span></div>
 <div class="cv-header"><h2>Tanner Lee Corley</h2><p>Ph.D. Candidate, Department of History, University of Alabama</p><p>(501) 467-4918 · <a href="mailto:tlcorley@crimson.ua.edu">tlcorley@crimson.ua.edu</a></p></div>
 <section class="section cv-section"><h2>Education</h2><div class="entry cv-entry"><span class="year">2027</span><div>Ph.D. in History, University of Alabama.<br><span class='detail'>Dissertation: <em>License to Cut: Race, Regulation, and the Southern Beauty Industry, 1890–1980</em><br>Advisor: Kari Frederickson</span></div></div>
 <div class="entry cv-entry"><span class="year">2023</span><div>M.A. in History, University of Alabama</div></div>

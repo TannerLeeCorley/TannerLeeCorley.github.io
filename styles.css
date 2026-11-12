@@ -17,3 +17,10 @@ main{min-height:65vh}.hero{padding:100px 0 95px;max-width:800px}.eyebrow{font:12
 .research-publications{display:grid;grid-template-columns:minmax(0,1fr) 210px;gap:38px;align-items:start}
 .journal-cover img{width:100%;height:auto;object-fit:contain}
 @media(max-width:760px){.home-hero-grid,.about-photo-grid,.research-publications{grid-template-columns:1fr;gap:28px}.home-portrait{max-width:340px}.bookstore-photo,.journal-cover{max-width:280px}.hero:has(.home-hero-grid){padding:54px 0}}
+
+/* Podcast artwork alongside public media link */
+.podcast-entry-content{display:flex;align-items:center;gap:20px}
+.podcast-cover-link{flex:0 0 136px;display:block}
+.podcast-cover-link img{display:block;width:136px;height:136px;object-fit:cover;border:1px solid var(--line)}
+.podcast-entry-content .small{margin:5px 0 0}
+@media(max-width:480px){.podcast-entry-content{align-items:flex-start;gap:14px}.podcast-cover-link{flex-basis:100px}.podcast-cover-link img{width:100px;height:100px}}
